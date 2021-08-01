@@ -73,17 +73,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-
-    .btn{
-        color: #192857;
-        border-color: #192857;
-        margin: 20px 0px;
-    }
-    
-    .btn:hover{
-        color: #fff;
-        background-color: #192857;
-    }
 }
 
 .bienvenidos{
@@ -151,6 +140,7 @@ ul{
 
 .info-reservas{
     height: auto;
+    text-align: center;
 
     h2,h3,p{
         color: #fff;
@@ -166,6 +156,11 @@ ul{
         p{
             color: rgb(175, 173, 173);
         }
+    }
+
+    .btn-oscuro{
+        width: 200px;
+
     }
 }
 
@@ -209,22 +204,6 @@ ul{
     span{
         font-size: 52px;
         margin-right: 10px;
-    }
-
-    .btn{
-        margin-bottom: 0px !important;
-        margin-top: 0px !important;
-        color: #fff;
-        border-color: #fff;
-        margin: 20px 0px;
-        margin-left: 10px;
-    }
-    
-    .btn:hover{
-        color: #192857;
-        background-color: #fff;
-    }
-
-    
+    }    
 }
 
