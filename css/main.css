@@ -252,7 +252,8 @@ hr {
     margin-right: 10px; }
   .navbar a {
     color: #83919c !important;
-    text-align: center; }
+    text-align: center;
+    transition: all 400ms ease; }
   .navbar :hover {
     color: #f7f9fb !important; }
 
@@ -260,8 +261,8 @@ footer .contenedor-footer {
   margin: 0 auto; }
 
 footer .logo-footer {
-  width: 250px;
-  height: 250px; }
+  width: 220px;
+  height: 220px; }
 
 footer .footer-secciones {
   display: flex;
@@ -270,11 +271,18 @@ footer .footer-secciones {
   footer .footer-secciones h2 {
     font-size: 1.5rem;
     font-weight: 300;
-    color: #b2bcc3; }
-  footer .footer-secciones a {
-    font-weight: 300;
-    color: #83919C;
+    color: #dadada; }
+  footer .footer-secciones p {
+    font-size: 1rem;
+    color: #fff;
     text-decoration: none; }
+  footer .footer-secciones .icon-footer {
+    opacity: .5;
+    width: 25px;
+    height: 25px;
+    transition: all 400ms ease; }
+  footer .footer-secciones :hover {
+    opacity: 1; }
 
 .copy {
   padding-bottom: 5px;
@@ -287,3 +295,10 @@ footer .footer-secciones {
   .copy p {
     font-size: 14px;
     color: #fff; }
+
+@media only screen and (max-width: 767px) {
+  .logo-footer {
+    width: 250px;
+    height: 250px; }
+  .footer-secciones {
+    text-align: center; } }
