@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Hotel Tronador. Situado en el centro de Bariloche con cercanía a los mejores restaurantes, bares y centros turísticos de la ciudad.">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONTS -->
+    <!-- GOOGLE ICONS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet">
+    <!--BS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Hotel Tronador | San Carlos de Bariloche</title>
+</head>
+<body>
+  <a href="#" class="whatsapp" target="_blank"></a>
+    <header class="header-contenedor">
+      <div class="container-fluid contenedor-nav">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a href="#">
+             <img src="./img/logo/logo_menu_hover.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">GALERÍA</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">HABITACIONES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#reservas">RESERVAS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACTO</a>
+                </li>
+              </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- BANNER -->
+      <section class="banner">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/slide2.jpg" class="d-block w-100" alt="Vestíbulo Tronador Hotel">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/slideHotel.jpg" class="d-block w-100" alt=" Tronador Hotel">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/cerroTronador.jpg" class="d-block w-100" alt="Cerro Tronador">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- FIN BANNER -->
+  
+      <!-- DISPONIBILIDAD -->
+      <section id="contenedor-blanco">
+        <div class="container form-disponibilidad p-3 mb-5 rounded">
+          <article class="container-form-disponibilidad mb-0">
+            <div class="mb-3">
+              <label for="fecha" class="form-label">Fecha de entrada</label>
+              <input type="date" class="form-control" value="2021-08-01"
+              min="2021-08-01" id="fecha">
+            </div>
+            <div class="mb-3">
+              <label for="fecha" class="form-label">Fecha de salida</label>
+              <input type="date" class="form-control" value="2021-08-01"
+              min="2021-08-01" id="fecha">
+            </div>
+            <div>
+              <label for="noches" class="form-label">Noches</label>
+              <select id="noches" class="form-select" aria-label="Default select example">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+              </select>
+            </div>
+            
+          </article>
+          <article class="container-form-disponibilidad mb-0">
+            <div>
+              <label for="adultos" class="form-label">Adultos</label>
+              <select id="adultos" class="form-select" aria-label="Default select example">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+            <div>
+              <label for="menores" class="form-label">Menores</label>
+              <select id="menores" class="form-select" aria-label="Default select example">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>    
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary mb-3 btn-disponibilidad">Consultar disponibilidad</button>
+            </div>        
+          </article>
+        </div>
+      </section>
+      <!-- FIN DISPONIBILIDAD -->
+
+      <section id="contenedor-blanco">
+        <article>
+          <h1 class="bienvenidos">HOTEL TRONADOR BARILOCHE</h1>
+          <div class="container">
+            <!-- TARJETAS -->
+            <div class="row">
+              <!-- TARJETA CALIDAD -->
+              <div class="card-data col-md-4">
+                <div class="card-tittle">
+                  <div class="stars">
+                    <span class="material-icons-round stars">star_rate</span>
+                    <span class="material-icons-round stars">star_rate</span>
+                    <span class="material-icons-round stars">star_rate</span>
+                    <span class="material-icons-round stars">star_rate</span>
+                    <span class="material-icons-round stars">star_rate</span>
+                  </div>
+                  <h2>CALIDAD</h2>
+                </div>
+                <div class="card-info">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugit cumque sed est iusto eos, qui inventore recusandae consectetur debitis?
+                  </p>
+                </div>
+                <button type="button" class="btn btn-outline-primary">Ver más</button>
+              </div>
+              <!-- FIN TARJETA CALIDAD -->
+
+              <!-- UBICACION -->
+              <div class="card-data col-md-4">
+                <div class="card-tittle">
+                  <div class="stars">
+                    <span class="material-icons-round stars">pin_drop</span>
+                  </div>
+                  <h2>UBICACIÓN</h2>
+                </div>
+                <div class="card-info">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugit cumque sed est iusto eos, qui inventore recusandae consectetur debitis?
+                  </p>
+                </div>
+                <button type="button" class="btn btn-outline-primary">Ver más</button>
+              </div>
+              <!-- FIN UBICACION -->
+
+              <!-- EXCURSIONES -->
+              <div class="card-data col-md-4">
+                <div class="card-tittle">
+                  <div class="stars">
+                    <span class="material-icons-round stars">map</span>
+                  </div>
+                  <h2>EXCURSIONES</h2>
+                </div>
+                <div class="card-info">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugit cumque sed est iusto eos, qui inventore recusandae consectetur debitis?
+                  </p>
+                </div>
+                <button type="button" class="btn btn-outline-primary">Ver más</button>
+              </div>
+              <!-- FIN EXCURSIONES -->
+            </div>
+            <!-- FIN TARJETAS -->
+          </div>
+        </article>
+         
+        <!-- SERVICIOS -->
+        <article>
+          <div class="container">
+            <div class="container-servicios">
+              <div class="servicios-tittle">
+                <h2>SERVICIOS</h2>
+              </div>
+              <div class="row info-servicios">
+                  <ul>
+                    <li>
+                      <span class="material-icons-round">garage</span>
+                      <p>Garage propio.</p>
+                    </li>
+                    <li>
+                      <span class="material-icons-round">wifi</span>
+                      <p>Wi-Fi gratis.</p>
+                    </li>
+                    <li>
+                      <span class="material-icons-round">bathroom</span>
+                      <p>Habitación con baño privado.</p>
+                    </li>
+                    <li>
+                      <span class="material-icons-round">free_breakfast</span>
+                      <p>Desayuno incluido.</p>
+                    </li>
+                    <li>
+                      <span class="material-icons-round">cleaning_services</span>
+                      <p>Servicio de limpieza.</p>
+                    </li>
+                  </ul>
+
+                  <ul>
+                    <li>
+                      <span class="material-icons-round">privacy_tip</span>
+                      <p>Caja de seguridad.</p>
+                    </li>
+                    <li>
+                      <span class="material-icons-round">room_service</span>
+                      <p>Recepcion las 24hs.</p>
+                    </li>
+                    <li>
+                      <span class="material-icons-round">groups</span>
+                      <p>Habitaciones individuales y familiares.</p>
+                    </li>
+                    <li>
+                      <span class="material-icons-round">local_bar</span>
+                      <p>Bar.</p>
+                    </li>
+                    <li>
+                      <span class="material-icons-round">pool</span>
+                      <p>Pileta climatizada.</p>
+                    </li>
+                  </ul>         
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- FIN SERVICIOS -->        
+      </section>
+
+      <!-- RESERVAS -->
+      <section id="reservas" class="container-fluid contenedor-azul">
+        <div class="container containerReservas">
+          <div class="container-info">
+            <h2>RESERVAS</h2>
+            <div class="info-reservas row">
+             <div class="col-md-4 text-center info-reservas-items">
+              <h3><span class="icon-reserva">$</span></h3>
+              <h2>MEJOR PRECIO</h2>
+              <p>Contamos con una gran variedad de habitaciones y precios para que se ajusten a tu presupuesto.</p>
+             </div>
+
+             <div class="col-md-4 text-center info-reservas-items">
+              <h3><span class="material-icons-round icon-reserva">lock</span></h3>
+              <h2>SEGURA</h2>
+              <p>Pagá de forma segura a través de nuestra página. Aceptamos MercadoPagom, Paypal y los siguientes bancos.</p>
+              <div class="tarjetas">
+                <img src="./img/tarjetas_400x60.png" alt="">
+              </div>
+             </div>
+
+             <div class="col-md-4 text-center info-reservas-items">
+              <h3><span class="material-icons-round icon-reserva">event_busy</span></h3>
+              <h2>CANCELA SIN COSTO</h2>
+              <p>Hacé tu reserva y podés cancelar hasta 30 días antes sin costo.</p>
+             </div>
+             <a href="contacto.html"><button class="btn btn-outline-primary btn-recerva">RECERVAR</button></a>
+            </div>
+            <hr>
+            <div class="form-reserva row">
+              <h6 class="text-center">Para subscribirte a nuestro Newsletter dejanos tu mail.</h6>
+              <div class="col-md-12 text-center d-flex align-items-center d-flex justify-content-center">
+                <span class="material-icons-round">mail</span>
+                <input type="text" class="form-control input" placeholder="Hacenos tu reserva" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Email'">
+                <button class="btn btn-outline-primary" type="submit">Enviar</button>
+              </div>
+            </div>
+            <hr>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

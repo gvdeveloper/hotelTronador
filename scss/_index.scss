@@ -1,0 +1,230 @@
+.whatsapp{
+    background-image: url(../img/WhatsApp-logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50px;
+    z-index: 100;
+    transition: all 400ms ease;
+    transform: scale(1);  
+}
+
+.whatsapp:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.carousel-item{
+    height: 700px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+//DISPONIBILIDAD
+.form-disponibilidad{
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.87);
+    background-color: #0b1a2a;
+    z-index: 90;
+    position:absolute;
+    top: 63vh;
+    left: 0;
+    right: 0;
+    margin: auto;   
+    padding: 0;
+    text-align: center;
+
+    .btn-disponibilidad{
+        margin-top: 31px;
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+    
+    .btn-disponibilidad:hover{
+            background-color: #fff;
+            color: #192857;
+            border: 1px solid #fff;
+    }
+}
+.container-form-disponibilidad{
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+    text-align: center;
+
+    input,
+    .form-select{
+        width: 400px;
+    }
+}
+// TARJETAS
+.card-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .btn{
+        color: #192857;
+        border-color: #192857;
+        margin: 20px 0px;
+    }
+    
+    .btn:hover{
+        color: #fff;
+        background-color: #192857;
+    }
+}
+
+.bienvenidos{
+    text-align: center;
+    margin-bottom: 70px;
+    color: #192857;
+}
+
+.card-tittle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .stars{
+        color: #192857;
+    }
+}
+
+// SERVICIOS
+.servicios-tittle{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.info-servicios {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+ul{
+    margin: auto;
+    min-width: 300px;
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+}
+
+    li{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+// RESERVAS
+.containerReservas{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+
+    .container-info{
+        width: 100%;
+
+        h2{
+            color: #fff;
+            text-align: center;
+        }
+    }
+}
+
+.info-reservas{
+    height: auto;
+
+    h2,h3,p{
+        color: #fff;
+    }
+
+    .info-reservas-items{
+        padding: 20px 20px;
+
+        .icon-reserva{
+            font-size: 2.6rem;
+        }
+
+        p{
+            color: rgb(175, 173, 173);
+        }
+    }
+}
+
+.tarjetas{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
+
+    .material-icons-round{
+        font-size: 35px;
+    }
+}
+
+// FORM RESERVA
+
+.form-reserva{
+    h6{
+        color: #fff;
+        margin-bottom: 0;
+    }
+}
+.input{
+    background-color: transparent;
+    border: 1px solid rgb(119, 119, 119);
+    border-radius: 6px;
+    color: rgb(167, 166, 166);
+    height: 35px;
+    width: 400px;
+    
+}
+.input:focus {
+    box-shadow:none;
+    border: 1px solid rgb(194, 193, 193);
+    background-color: transparent;
+    color: rgb(167, 167, 167);
+}
+
+.col-md-12{
+    span{
+        font-size: 52px;
+        margin-right: 10px;
+    }
+
+    .btn{
+        margin-bottom: 0px !important;
+        margin-top: 0px !important;
+        color: #fff;
+        border-color: #fff;
+        margin: 20px 0px;
+        margin-left: 10px;
+    }
+    
+    .btn:hover{
+        color: #192857;
+        background-color: #fff;
+    }
+
+    
+}
+

@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none; }
+
+html {
+  font-size: 16px; }
+  @media only screen and (max-width: 540px) {
+    html {
+      font-size: 14px; } }
+
+body {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0b1a2a; }
+
+#contenedor-blanco, .contenedor-azul {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: auto;
+  width: 100%;
+  background-color: #fff; }
+
+.contenedor-azul {
+  background-color: #0b1a2a; }
+
+article {
+  padding: 50px 0; }
+
+span {
+  color: #146f6f; }
+
+a {
+  text-decoration: none; }
+
+h2 {
+  color: #0b1a2a;
+  font-size: 2rem;
+  font-weight: 500; }
+
+p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-bottom: 0px;
+  color: #0b1a2a; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+hr {
+  color: #fff; }
+
+.whatsapp {
+  background-image: url(../img/WhatsApp-logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50px;
+  z-index: 100;
+  transition: all 400ms ease;
+  transform: scale(1); }
+
+.whatsapp:hover {
+  transform: scale(1.2);
+  transition: 1s; }
+
+.carousel-item {
+  height: 700px; }
+  .carousel-item img {
+    width: 100%;
+    height: 100%; }
+
+.form-disponibilidad {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.87);
+  background-color: #0b1a2a;
+  z-index: 90;
+  position: absolute;
+  top: 63vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 0;
+  text-align: center; }
+  .form-disponibilidad .btn-disponibilidad {
+    margin-top: 31px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff; }
+  .form-disponibilidad .btn-disponibilidad:hover {
+    background-color: #fff;
+    color: #192857;
+    border: 1px solid #fff; }
+
+.container-form-disponibilidad {
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  align-content: center;
+  color: #fff;
+  text-align: center; }
+  .container-form-disponibilidad input,
+  .container-form-disponibilidad .form-select {
+    width: 400px; }
+
+.card-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .card-data .btn {
+    color: #192857;
+    border-color: #192857;
+    margin: 20px 0px; }
+  .card-data .btn:hover {
+    color: #fff;
+    background-color: #192857; }
+
+.bienvenidos {
+  text-align: center;
+  margin-bottom: 70px;
+  color: #192857; }
+
+.card-tittle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .card-tittle .stars {
+    color: #192857; }
+
+.servicios-tittle {
+  text-align: center;
+  margin-bottom: 70px; }
+
+.info-servicios {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .info-servicios ul {
+    margin: auto;
+    min-width: 300px;
+    display: flex;
+    width: 400px;
+    flex-direction: column; }
+  .info-servicios li {
+    display: flex;
+    gap: 10px;
+    align-items: center; }
+
+.containerReservas {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%; }
+  .containerReservas .container-info {
+    width: 100%; }
+    .containerReservas .container-info h2 {
+      color: #fff;
+      text-align: center; }
+
+.info-reservas {
+  height: auto; }
+  .info-reservas h2, .info-reservas h3, .info-reservas p {
+    color: #fff; }
+  .info-reservas .info-reservas-items {
+    padding: 20px 20px; }
+    .info-reservas .info-reservas-items .icon-reserva {
+      font-size: 2.6rem; }
+    .info-reservas .info-reservas-items p {
+      color: #afadad; }
+
+.tarjetas {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 15px; }
+  .tarjetas .material-icons-round {
+    font-size: 35px; }
+
+.form-reserva h6 {
+  color: #fff;
+  margin-bottom: 0; }
+
+.input {
+  background-color: transparent;
+  border: 1px solid #777777;
+  border-radius: 6px;
+  color: #a7a6a6;
+  height: 35px;
+  width: 400px; }
+
+.input:focus {
+  box-shadow: none;
+  border: 1px solid #c2c1c1;
+  background-color: transparent;
+  color: #a7a7a7; }
+
+.col-md-12 span {
+  font-size: 52px;
+  margin-right: 10px; }
+
+.col-md-12 .btn {
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+  color: #fff;
+  border-color: #fff;
+  margin: 20px 0px;
+  margin-left: 10px; }
+
+.col-md-12 .btn:hover {
+  color: #192857;
+  background-color: #fff; }
+
+.header-contenedor {
+  height: auto;
+  width: 100%;
+  background-color: #0b1a2a;
+  position: fixed;
+  z-index: 100; }
+
+.contenedor-nav {
+  display: flex;
+  justify-content: center; }
+
+.navbar {
+  padding: 20px 0; }
+  .navbar li {
+    margin-right: 10px; }
+  .navbar a {
+    color: #83919c !important;
+    text-align: center; }
+  .navbar :hover {
+    color: #f7f9fb !important; }
