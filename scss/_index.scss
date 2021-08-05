@@ -18,13 +18,18 @@
     transition: 1s;
 }
 
+//BANNER
+
 .carousel-item{
     height: 700px;
+    width: 100%;
     img{
-        width: 100%;
+        object-fit: cover;
+        width: auto;
         height: 100%;
     }
 }
+
 //DISPONIBILIDAD
 .form-disponibilidad{
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.87);
