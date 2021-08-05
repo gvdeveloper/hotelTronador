@@ -16,7 +16,6 @@ body {
   background-color: #0b1a2a; }
 
 #contenedor-blanco, .contenedor-azul {
-  padding: 30px 0 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,6 +124,7 @@ hr {
     border: 1px solid #fff; }
 
 .container-form-disponibilidad {
+  width: 100%;
   padding: 0px;
   display: flex;
   flex-wrap: wrap;
@@ -235,6 +235,36 @@ hr {
   font-size: 52px;
   margin-right: 10px; }
 
+@media only screen and (max-width: 750px) {
+  .form-disponibilidad {
+    position: static; }
+  .container-form-disponibilidad input,
+  .container-form-disponibilidad .form-select {
+    width: 320px; }
+  .tarjetas img {
+    width: 350px; }
+  .content-newsletter {
+    flex-direction: column; }
+    .content-newsletter .material-icons-round {
+      margin-right: 0; }
+    .content-newsletter .input-newsletter {
+      width: 300px; }
+    .content-newsletter .btn-newsletter {
+      margin-left: 0;
+      margin-top: 10px !important; } }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .tarjetas img {
+    width: 250px; } }
+
+@media only screen and (min-width: 751px) and (max-width: 992px) {
+  .form-disponibilidad {
+    position: static; } }
+
+@media only screen and (min-width: 993px) {
+  .container-form-dispo {
+    padding-bottom: 200px; } }
+
 .header-contenedor {
   height: auto;
   width: 100%;
@@ -247,6 +277,7 @@ hr {
   justify-content: center; }
 
 .navbar {
+  justify-content: space-around;
   padding: 20px 0; }
   .navbar li {
     margin-right: 10px; }
