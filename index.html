@@ -291,7 +291,7 @@
               <h2>CANCELA SIN COSTO</h2>
               <p>Hacé tu reserva y podés cancelar hasta 30 días antes sin costo.</p>
              </div>
-             <a href="contacto.html"><button class="btn btn-outline-primary btn-oscuro">RESERVAR</button></a>
+             <a href="#"><button class="btn btn-outline-primary btn-oscuro">RESERVAR</button></a>
             </div>
             <hr>
             <div class="form-reserva row">
@@ -313,22 +313,29 @@
         <div class="container-form container">
           <div class="name-mail">
             <div class="col-name">
-              <input class="input-form" type="text" placeholder="Nombre">
+              <input class="input-form" type="text" required placeholder="Nombre">
             </div>
             <div class="col-mail">
-              <input class="input-form" type="email" placeholder="Email">
+              <input class="input-form" type="email" required placeholder="Email">
             </div>
           </div>
           <div class="container-asunto row">
-            <input class="asunto col-md-12" type="text" placeholder="Asunto">
+            <input class="asunto col-md-12" type="text" required placeholder="Asunto">
           </div>
           <div class="container-mensaje">
-            <textarea class="mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea>
+            <textarea class="mensaje" cols="30" rows="5" required placeholder="Mensaje"></textarea>
           </div>
+          <div class="btn-contact">
+            <button type="submit" class="btn btn-outline-primary btn-oscuro">ENVIAR</button>
+            <button type="reset" class="btn btn-outline-primary btn-oscuro">RESETEAR</button>
+          </div>
+          
         </div>
+        
       </section>
     </main>
 <hr>
+
     <footer>
       <div class="row container d-flex justify-content-center d-flex align-items-center contenedor-footer">
         <div class="col-md-4 text-center">

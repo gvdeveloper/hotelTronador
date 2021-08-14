@@ -43,6 +43,10 @@ span {
   background-color: #192857;
   border-color: #192857; }
 
+.btn-claro:focus {
+  border: none !important;
+  box-shadow: none !important; }
+
 .btn-oscuro {
   margin-bottom: 0px !important;
   margin-top: 0px !important;
@@ -56,6 +60,12 @@ span {
   color: #fff;
   background-color: #0d4444;
   border-color: #0d4444; }
+
+.btn-oscuro:focus {
+  color: #fff;
+  background-color: #0d4444;
+  border-color: #0d4444;
+  box-shadow: none; }
 
 a {
   text-decoration: none; }
@@ -417,3 +427,9 @@ footer {
 .mensaje::-webkit-scrollbar-thumb {
   background: #0b1a2a;
   border-radius: 5px; }
+
+.btn-contact {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }

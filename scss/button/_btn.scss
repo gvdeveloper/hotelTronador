@@ -9,7 +9,10 @@
     background-color: #192857;
     border-color: #192857;
 }
-
+.btn-claro:focus{
+    border: none !important;
+    box-shadow: none !important;
+}
 
 
 .btn-oscuro{
@@ -27,3 +30,10 @@
     background-color: #0d4444;
     border-color: #0d4444;
 }
+.btn-oscuro:focus{
+    color: #fff;
+    background-color: #0d4444;
+    border-color: #0d4444;
+    box-shadow: none;
+}
+
