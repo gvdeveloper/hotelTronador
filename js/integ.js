@@ -2,7 +2,7 @@ var destino = prompt("Seleccione un destino: \n 1- Bariloche \n 2- Córdoba \n 3
 var dias = prompt("Ingrese la cantidad de días \n 3 \n 7");
 var resultado = destino + dias;
 
-while (resultado != "4"){
+while (resultado != ""){
     switch(resultado){
         case "13":
             alert("El precio para Bariloche por 3 días es de $4000");
@@ -29,5 +29,5 @@ while (resultado != "4"){
             alert("Faltaron ingresar datos");
     }
 
-    resultado = 4;
+    resultado = "";
 }
