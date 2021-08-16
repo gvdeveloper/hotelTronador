@@ -28,4 +28,6 @@ while (resultado != "4"){
         default:
             alert("Faltaron ingresar datos");
     }
+
+    resultado = 4;
 }
