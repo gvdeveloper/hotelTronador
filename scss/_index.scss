@@ -30,6 +30,16 @@
     }
 }
 
+// Editando DOM
+#presentacion{
+    h3{
+        color: red;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 //DISPONIBILIDAD
 .form-disponibilidad{
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.87);

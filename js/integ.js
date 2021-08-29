@@ -1,5 +1,9 @@
+var nombreUsuario = prompt("Bienvenido a Tronador Hotel, ingrese su nombre");
+localStorage.setItem("usuario", nombreUsuario);
+
 var destino = prompt("Seleccione un destino: \n 1- Bariloche \n 2- Córdoba \n 3- Mendoza \n 4- No elegír destino y continuar");
 var resultadoDestino = destino;
+
 while (resultadoDestino != "4"){
     var dias = prompt("Ingrese la cantidad de días \n 3 \n 7");
     var resultado = destino + dias;
@@ -28,5 +32,11 @@ while (resultadoDestino != "4"){
             break;
     }
     resultadoDestino = "4";
-    destino = ""
+    destino = "";
 }
+
+//modificando DOM
+let padre = document.getElementById("presentacion");
+let parrafo = document.createElement("p");
+parrafo.innerHTML = `<h3> Bienvenido "${nombreUsuario}" a nuestro sitio. Gracias por elegir un destino. </h3> <br>`;
+padre.appendChild(parrafo);

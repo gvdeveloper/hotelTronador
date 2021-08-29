@@ -88,6 +88,10 @@ ul {
 hr {
   color: #fff; }
 
+.span-bold {
+  font-weight: bold;
+  color: #0b1a2a; }
+
 .whatsapp {
   background-image: url(../img/WhatsApp-logo.png);
   background-repeat: no-repeat;
@@ -113,6 +117,13 @@ hr {
     object-fit: cover;
     width: auto;
     height: 100%; }
+
+#presentacion {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #presentacion h3 {
+    color: red; }
 
 .form-disponibilidad {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.87);
@@ -281,7 +292,7 @@ hr {
   height: auto;
   width: 100%;
   background-color: #0b1a2a;
-  position: fixed;
+  position: sticky;
   z-index: 100; }
 
 .contenedor-nav {
@@ -433,3 +444,47 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+* {
+  box-sizing: border-box; }
+
+.container-cards {
+  padding: 30px 0; }
+
+.container .card-individual {
+  border-radius: 5px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  background-color: #fff; }
+  .container .card-individual .img-card {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 10px; }
+    .container .card-individual .img-card img {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      height: 100%;
+      width: 100%; }
+  .container .card-individual .info {
+    padding: 30px 0px 0 80px;
+    width: 100%; }
+    .container .card-individual .info h2 {
+      font-size: 4em;
+      color: #000; }
+  .container .card-individual .equipamiento-habitacion {
+    padding-top: 10px; }
+    .container .card-individual .equipamiento-habitacion .info-equipamiento {
+      display: flex;
+      gap: 50px; }
+      .container .card-individual .equipamiento-habitacion .info-equipamiento p {
+        display: flex;
+        color: #000; }
+        .container .card-individual .equipamiento-habitacion .info-equipamiento p span {
+          margin-right: 5px; }
+
+.caracteristicas p {
+  display: flex;
+  color: #000; }
+  .caracteristicas p span {
+    margin-right: 5px; }
