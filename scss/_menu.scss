@@ -1,3 +1,19 @@
+.sesion{
+    padding:10px 20px;
+    text-align: end;
+    background:#0f2236;
+
+    a{
+        color: #83919c !important;
+        transition: all 400ms ease;
+    }
+
+    :hover{
+        color: #f7f9fb !important;
+    }
+
+}
+
 .header-contenedor{
     height: auto;
     width: 100%;
