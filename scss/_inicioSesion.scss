@@ -32,15 +32,17 @@
         width: 100%;
         padding: 3px;
     }
-}
 
-input[type="text"],
-input[type="password"]{
+    input[type="text"],
+    input[type="password"]{
     font-size: 20px;
     width: 82%;
     border: none;
     padding: 10px;
 }
+}
+
+
 
 .input-container{
     margin-bottom: 15px;
@@ -82,9 +84,6 @@ p{
     
 }
 
-hr{
-    color: #1a2537;
-}
 
 @media(min-width:768px){
     .formulario{

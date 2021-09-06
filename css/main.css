@@ -322,6 +322,7 @@ hr {
     color: #f7f9fb !important; }
 
 footer {
+  z-index: 100;
   padding: 20px 0; }
   footer .contenedor-footer {
     margin: 0 auto; }
@@ -335,7 +336,8 @@ footer {
     footer .footer-secciones h2 {
       font-size: 1.5rem;
       font-weight: 300;
-      color: #dadada; }
+      color: #dadada;
+      text-align: center; }
     footer .footer-secciones p {
       font-size: 1rem;
       color: #fff;
@@ -566,13 +568,12 @@ footer {
   .formulario .datos {
     width: 100%;
     padding: 3px; }
-
-input[type="text"],
-input[type="password"] {
-  font-size: 20px;
-  width: 82%;
-  border: none;
-  padding: 10px; }
+  .formulario input[type="text"],
+  .formulario input[type="password"] {
+    font-size: 20px;
+    width: 82%;
+    border: none;
+    padding: 10px; }
 
 .input-container {
   margin-bottom: 15px;
@@ -605,9 +606,6 @@ p {
     font-weight: 400; }
   p .link:hover {
     color: #1a2537; }
-
-hr {
-  color: #1a2537; }
 
 @media (min-width: 768px) {
   .formulario {
