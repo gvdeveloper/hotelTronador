@@ -488,6 +488,9 @@ footer {
     width: 100%;
     opacity: 0.7; }
 
+.todo {
+  height: 800px; }
+
 .container-tipo-habitaciones {
   display: flex;
   padding-top: 20px;
