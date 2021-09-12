@@ -15,6 +15,24 @@
 }
 
 
+.btn-oscuro-azul{
+    color: #fff;
+    border-color: #192857;
+    background-color: #192857;
+    margin: 20px 0px;
+}
+
+.btn-oscuro-azul:hover{
+    color: #fff;
+    background-color: #213572;
+    border-color: #213572;
+}
+.btn-oscuro-azul:focus{
+    border-color: #192857 !important;
+    box-shadow: none !important;
+}
+
+
 .btn-oscuro{
     margin-bottom: 0px !important;
     margin-top: 0px !important;

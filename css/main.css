@@ -47,6 +47,21 @@ span {
   border: none !important;
   box-shadow: none !important; }
 
+.btn-oscuro-azul {
+  color: #fff;
+  border-color: #192857;
+  background-color: #192857;
+  margin: 20px 0px; }
+
+.btn-oscuro-azul:hover {
+  color: #fff;
+  background-color: #213572;
+  border-color: #213572; }
+
+.btn-oscuro-azul:focus {
+  border-color: #192857 !important;
+  box-shadow: none !important; }
+
 .btn-oscuro {
   margin-bottom: 0px !important;
   margin-top: 0px !important;
@@ -514,24 +529,28 @@ footer {
     flex-direction: column;
     justify-content: center; }
     .container .card-individual .info h2 {
-      font-size: 4em;
+      font-size: 3em;
       color: #000; }
   .container .card-individual .equipamiento-habitacion {
-    padding-top: 10px; }
+    padding-top: 15px; }
     .container .card-individual .equipamiento-habitacion .info-equipamiento {
       display: flex;
       gap: 50px; }
       .container .card-individual .equipamiento-habitacion .info-equipamiento p {
+        margin-bottom: 10px;
         display: flex;
         color: #000; }
         .container .card-individual .equipamiento-habitacion .info-equipamiento p span {
           margin-right: 5px; }
 
-.caracteristicas p {
-  display: flex;
-  color: #000; }
-  .caracteristicas p span {
-    margin-right: 5px; }
+.caracteristicas {
+  padding-top: 15px; }
+  .caracteristicas p {
+    margin-bottom: 10px;
+    display: flex;
+    color: #000; }
+    .caracteristicas p span {
+      margin-right: 5px; }
 
 @media only screen and (max-width: 750px) {
   .section-banner {

@@ -73,19 +73,20 @@
         flex-direction: column;
         justify-content: center;
         h2{
-            font-size: 4em;
+            font-size: 3em;
             color: #000;
         }
         
     }
 
     .equipamiento-habitacion{
-        padding-top: 10px;
+        padding-top: 15px;
         .info-equipamiento{
             display: flex;
             gap: 50px;
          
             p{
+             margin-bottom: 10px;
              display: flex;
              color: #000;
      
@@ -98,7 +99,9 @@
 }
 
 .caracteristicas{
+    padding-top: 15px;
     p{
+        margin-bottom: 10px;
         display: flex;
         color: #000;
 
