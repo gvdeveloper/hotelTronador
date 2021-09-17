@@ -1,10 +1,3 @@
-/* let individual = $("#btn-individual");
-individual.click(mostrar);
-function mostrar(){
-    $("#hab-individual").show();
-} */
-
-
 $(document).ready(()=> {
     $("#hab-individual").hide();
     $("#hab-standard").hide();
