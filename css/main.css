@@ -140,6 +140,20 @@ hr {
   #presentacion h3 {
     color: red; }
 
+.bienvenidos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto; }
+
+.bienvenidos .bienvenidos-info {
+  height: auto;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 .form-disponibilidad {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.87);
   background-color: #0b1a2a;
@@ -184,7 +198,7 @@ hr {
 
 .bienvenidos {
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
   color: #192857; }
 
 .card-tittle {
@@ -195,9 +209,12 @@ hr {
   .card-tittle .stars {
     color: #192857; }
 
+.article-servicios {
+  padding-top: 0px; }
+
 .servicios-tittle {
   text-align: center;
-  margin-bottom: 70px; }
+  margin-bottom: 30px; }
 
 .info-servicios {
   margin: 0 auto;
@@ -274,6 +291,10 @@ hr {
   margin-right: 10px; }
 
 @media only screen and (max-width: 750px) {
+  .bienvenidos-info img {
+    height: 250px;
+    width: 300px;
+    margin-bottom: 10px; }
   .form-disponibilidad {
     position: static; }
   .container-form-disponibilidad input,
@@ -287,7 +308,10 @@ hr {
       margin-right: 0; }
     .content-newsletter .input-newsletter {
       width: 300px; }
+    .content-newsletter .btn-reserva {
+      width: 100%; }
     .content-newsletter .btn-newsletter {
+      width: 100%;
       margin-left: 0;
       margin-top: 10px !important; } }
 
@@ -301,7 +325,11 @@ hr {
 
 @media only screen and (min-width: 993px) {
   .container-form-dispo {
-    padding-bottom: 200px; } }
+    padding-bottom: 100px; } }
+
+@media only screen and (min-width: 1200px) {
+  .container-form-dispo {
+    padding-bottom: 0px; } }
 
 .sesion {
   padding: 10px 20px;
@@ -338,7 +366,7 @@ hr {
 
 footer {
   z-index: 100;
-  padding: 20px 0; }
+  padding: 0px 0 20px 0; }
   footer .contenedor-footer {
     margin: 0 auto; }
   footer .logo-footer {
@@ -436,7 +464,7 @@ label {
     opacity: 0.7; }
 
 .todo {
-  height: 800px; }
+  height: auto; }
 
 .container-tipo-habitaciones {
   display: flex;
@@ -518,7 +546,7 @@ label {
   .container .card-individual {
     flex-direction: column;
     width: 400px;
-    height: 600px;
+    height: auto;
     padding-bottom: 10px;
     display: flex;
     background-color: #fff; }
@@ -532,7 +560,7 @@ label {
       padding: 0px 20px 0 20px;
       width: 100%; }
       .container .card-individual .info h2 {
-        font-size: 2.5em;
+        font-size: 2em;
         color: #000; }
     .container .card-individual .equipamiento-habitacion {
       padding-top: 10px; }
@@ -543,7 +571,8 @@ label {
           display: flex;
           color: #000; }
           .container .card-individual .equipamiento-habitacion .info-equipamiento p span {
-            margin-right: 5px; } }
+            margin-right: 5px;
+            font-size: 20px; } }
 
 @media only screen and (min-width: 751px) and (max-width: 1200px) {
   .section-banner {

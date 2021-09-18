@@ -47,9 +47,6 @@
                   <a class="nav-link" href="habitaciones.html">HABITACIONES</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#reservas">RESERVAS</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="contacto.html">CONTACTO</a>
                 </li>
               </ul>
@@ -149,10 +146,16 @@
       <!-- INFO HOTEL TRONADOR BARILOCHE -->
       <section id="contenedor-blanco">
         <article>
-          <h1 class="bienvenidos">HOTEL TRONADOR BARILOCHE</h1>
+          <div class="bienvenidos">
+            <div class="bienvenidos-info">
+              <img src="./img/logo/TRONADOR.png" alt="">
+              <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, cumque? Voluptate sed dolorum eum quia accusantium. Quis repellat magni eaque non voluptatem inventore nostrum, possimus optio quos aspernatur, porro autem?</p> -->
+             </div>
+            </div>
+          </div>
 
           <!-- MODIFICANDO DOM -->
-          <div id="presentacion"> </div>
+          <!-- <div id="presentacion"> </div> -->
           <!-- FIN MODIFICANDO DOM -->
 
           <div class="container">
@@ -218,12 +221,14 @@
         </article>
          
         <!-- SERVICIOS -->
-        <article>
+        <article class="article-servicios">
           <div class="container">
             <div class="container-servicios">
-              <div class="servicios-tittle">
+              <div class="card-tittle">
+                <div class="stars">
+                  <span class="material-icons-round stars">room_service</span>
+                </div>
                 <h2>SERVICIOS</h2>
-              </div>
               <div class="row info-servicios">
                   <ul>
                     <li>
@@ -302,11 +307,11 @@
               <h2>CANCELA SIN COSTO</h2>
               <p>Hacé tu reserva y podés cancelar hasta 30 días antes sin costo.</p>
              </div>
-             <a href="#"><button class="btn btn-outline-primary btn-oscuro">RESERVAR</button></a>
+             <a href="contacto.html"><button class="btn btn-reserva btn-outline-primary btn-oscuro">RESERVAR</button></a>
             </div>
-            <hr>
+            
             <div class="form-reserva row">
-              <h6 class="text-center">Para subscribirte a nuestro Newsletter dejanos tu mail.</h6>
+              <h6 class="text-center pt-5">Para subscribirte a nuestro Newsletter dejanos tu mail.</h6>
               <div class="col-md-12 content-newsletter text-center d-flex align-items-center d-flex justify-content-center">
                 <span class="material-icons-round">mail</span>
                 <input type="text" class="form-control input input-newsletter" placeholder="Subscribirse" onfocus="this.placeholder = ''"
@@ -314,7 +319,7 @@
                 <button class="btn btn-newsletter btn-outline-primary btn-oscuro" type="submit">Enviar</button>
               </div>
             </div>
-            <hr>
+            
           </div>
         </div>
       </section>
@@ -352,7 +357,7 @@
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- JQUERY -->
-    <script src="js/integ.js"></script>
+    <!-- <script src="js/integ.js"></script> -->
     <script src="js/disponibilidad.js"></script>
     <script src="js/validarForm.js"></script>
 </body>

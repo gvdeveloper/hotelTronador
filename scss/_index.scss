@@ -40,6 +40,23 @@
     align-items: center;
 }
 
+.bienvenidos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;    
+}
+
+.bienvenidos .bienvenidos-info{
+    height: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 //DISPONIBILIDAD
 .form-disponibilidad{
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.87);
@@ -93,7 +110,7 @@
 
 .bienvenidos{
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     color: #192857;
 }
 
@@ -109,9 +126,13 @@
 }
 
 // SERVICIOS
+
+.article-servicios{
+    padding-top: 0px;
+}
 .servicios-tittle{
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
 
 .info-servicios {
@@ -227,6 +248,14 @@ ul{
 
 
 @media only screen and (max-width:750px){
+    .bienvenidos-info{
+        img{
+            height: 250px;
+            width: 300px;
+            margin-bottom: 10px;
+        }
+    }
+
     .form-disponibilidad{
         position:static;
     }
@@ -254,7 +283,12 @@ ul{
             width:300px;
         }
 
+        .btn-reserva{
+            width: 100%;
+        }
+        
         .btn-newsletter{
+            width: 100%;
             margin-left: 0;
             margin-top: 10px !important;
         }
@@ -276,6 +310,12 @@ ul{
 
 @media only screen and (min-width:993px){
     .container-form-dispo{
-        padding-bottom: 200px;
+        padding-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .container-form-dispo{
+        padding-bottom: 0px;
     }
 }

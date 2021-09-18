@@ -17,7 +17,7 @@
 
 // TIPO DE HABITACIONES
 .todo{
-    height:800px;
+    height:auto;
 }
 .container-tipo-habitaciones{
     display: flex;
@@ -142,7 +142,7 @@
 .container .card-individual{
     flex-direction: column;
     width: 400px;
-    height: 600px;
+    height: auto;
     padding-bottom: 10px;
     display: flex;
     background-color: #fff;
@@ -161,7 +161,7 @@
         padding: 0px 20px 0 20px;
         width: 100%;
         h2{
-            font-size: 2.5em;
+            font-size: 2em;
             color: #000;
         }
         
@@ -176,9 +176,10 @@
             p{
              display: flex;
              color: #000;
-     
+
              span{
                  margin-right: 5px;
+                 font-size: 20px;
              }
             }
         }
