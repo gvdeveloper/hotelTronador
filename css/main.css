@@ -194,7 +194,17 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  animation-name: aparecer;
+  animation-iteration-count: unset;
+  animation-duration: 3s; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%); }
+  100% {
+    opacity: 1; } }
 
 .bienvenidos {
   text-align: center;
@@ -428,7 +438,8 @@ footer {
   .grupo-input .input-form {
     background-color: var(--color-dark-x);
     border: none;
-    padding: .8rem 1rem; }
+    padding: .8rem 1rem;
+    color: #f5f6f8; }
 
 .input-form:focus {
   background-color: var(--color-dark-x);
