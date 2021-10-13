@@ -1,44 +1,27 @@
-$(document).ready(()=> {
-    $("#hab-individual").hide();
-    $("#hab-standard").hide();
-    $("#hab-familiar").hide();
-    $("#hab-suite").hide();
+document.querySelector('#mostrar').addEventListener('click', traerDatos);
 
-    //MOSTRAR HABITACION INDIVIDUAL
-    
-    $("#mostrar-individual").click(function() {
-    $("#hab-individual").fadeIn(800);
-    $("#hab-standard").hide();
-    $("#hab-familiar").hide();
-    $("#hab-suite").hide();
-    });
-    //FIN MOSTRAR HABITACION INDIVIDUAL
+function traerDatos(){
 
-    //MOSTRAR HABITACION STANDARD
-    $("#mostrar-standard").click(function() {
-        $("#hab-individual").hide();
-        $("#hab-standard").fadeIn(800);
-        $("#hab-familiar").hide();
-        $("#hab-suite").hide();
-        });
-    //FIN MOSTRAR HABITACION STANDARD
+    const xhttp = new XMLHttpRequest();
 
-    //MOSTRAR HABITACION FAMILIAR
-    $("#mostrar-familiar").click(function() {
-        $("#hab-individual").hide();
-        $("#hab-standard").hide();
-        $("#hab-familiar").fadeIn(800);
-        $("#hab-suite").hide();
-        });
-    //FIN MOSTRAR HABITACION FAMILIAR
+    xhttp.open('GET', 'habitaciones.json', true);
+    xhttp.send();
 
+    xhttp.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            let datos = JSON.parse(this.responseText);
+            let res = document.querySelector('#respuesta');
+            res.innerHTML = '';
 
-    //MOSTRAR HABITACION SUITE
-    $("#mostrar-suite").click(function() {
-        $("#hab-individual").hide();
-        $("#hab-standard").hide();
-        $("#hab-familiar").hide();
-        $("#hab-suite").fadeIn(800);
-        });
-    //FIN MOSTRAR HABITACION SUITE
-});
+            for(let item of datos){
+                res.innerHTML += `
+                <tr>
+                  <td>${item.tipo}</td>
+                  <td>${item.capacidad}</td>
+                  <td>${item.precio}</td>
+                </tr>
+              `
+            }
+        }
+    }
+}

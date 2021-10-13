@@ -1,0 +1,25 @@
+[
+    {
+        "tipo": "Individuales",
+        "capacidad": "1 Persona",
+        "precio": "$2400"
+    },
+
+    {
+        "tipo": "Standard",
+        "capacidad": "2 Personas",
+        "precio": "$3000"
+    },
+
+    {
+        "tipo": "Familiar",
+        "capacidad": "4 Personas",
+        "precio": "$4000"
+    },
+
+    {
+        "tipo": "Suite",
+        "capacidad": "2 Personas",
+        "precio": "$5000"
+    }
+]
