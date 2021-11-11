@@ -1,32 +1,29 @@
-const apiUrl = "https://jsonplaceholder.typicode.com/users";
 
-const HTMLResponse = document.querySelector("#app");
-const ul = document.createElement('ul');
+const users = async () => {
+    const apiUrl = await fetch("https://randomuser.me/api/?page=3&results=6");
+    const usuarios = await apiUrl.json();
+    usersList(usuarios)
+}
 
-fetch(`${apiUrl}`)
-.then((response) => response.json())
-.then((users) => {
-    users.forEach((user) => {
-      let liName = document.createElement('li');
-      liName.appendChild(
-          document.createTextNode(`${user.name} ${user.username}`)      
-      );
+const usersList = usuarios => {
+    let div = '';
+    usuarios.results.map((usuario) => {
+        div += 
+        `
+            <div>
+                <li class="listNosotros">
+                <div class="imgContainer">
+                <img src="${usuario.picture.large}" alt="">
+                </div>
+                <h2>${usuario.name.first} ${usuario.name.last} </h2>
+                <p>${usuario.email}</p>
+                <p><span>Age:</span> ${usuario.dob.age}</p>
+                </li>
+            </div>
+         `
+    })
 
-      let liMail = document.createElement('p');
-      liMail.appendChild(
-          document.createTextNode(`Email: ${user.email}`)      
-      );
+    document.querySelector('.listadoRow').innerHTML = div;
+}
 
-      let liPhone = document.createElement('p');
-      liPhone.appendChild(
-          document.createTextNode(`Phone: ${user.phone}`)      
-      );
-
-      liName.appendChild(liMail);
-      liName.appendChild(liPhone);
-      
-      ul.appendChild(liName);
-    });
-
-    HTMLResponse.appendChild(ul);
-});
+users()

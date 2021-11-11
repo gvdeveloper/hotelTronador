@@ -462,16 +462,36 @@ footer {
 label {
   cursor: pointer; }
 
-#app {
-  width: 50%;
-  margin: 0 auto; }
-  #app li {
-    margin-bottom: 15px;
+.listado {
+  width: 100%;
+  margin: 10px auto auto auto; }
+
+.listadoRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px; }
+
+.listNosotros {
+  width: 100%;
+  margin-bottom: 30px; }
+  .listNosotros h2 {
+    font-weight: 400;
     color: #ffff;
-    font-size: 15px; }
-    #app li p {
-      font-size: 15px;
-      color: #ffff; }
+    text-align: center; }
+  .listNosotros p {
+    color: #ffff;
+    font-weight: 300;
+    margin-bottom: 0; }
+  .listNosotros img {
+    border-radius: 100px;
+    margin-bottom: 5px; }
+  .listNosotros span {
+    font-weight: 400; }
+
+.imgContainer {
+  display: flex;
+  justify-content: center; }
 
 .bodyInicioSesion {
   background-image: url(../img/cerroTronador.jpg);

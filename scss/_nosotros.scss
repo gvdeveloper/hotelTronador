@@ -1,15 +1,42 @@
-#app{
-    width: 50%;
-    margin: 0 auto;
+.listado{
+    width:100%;
+    margin: 10px auto auto auto;
+    
+}
 
-    li{
-        margin-bottom: 15px;
+.listadoRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+
+.listNosotros{
+    width: 100%;
+    margin-bottom: 30px;
+
+    h2{
+        font-weight: 400;
         color: #ffff;
-        font-size: 15px;
-        
-        p{
-            font-size: 15px;
-            color: #ffff;
-        }
+        text-align: center;
     }
+
+    p{
+        color: #ffff;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+    img{
+        border-radius: 100px;
+        margin-bottom: 5px;        
+    }
+  
+    span{
+        font-weight: 400;
+    }
+}
+
+.imgContainer{
+    display: flex;
+    justify-content: center;
 }
